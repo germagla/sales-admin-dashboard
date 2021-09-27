@@ -50,11 +50,13 @@ const SideNav = () => {
                         <FontAwesomeIcon icon={faFileContract} color="#6B7280" size="2x"/>
                     </a>
                 </div>
-                <div className={"sidebar-button"}>
-                    <a>
-                        <FontAwesomeIcon icon={faChartLine} color="#6B7280" size="2x"/>
-                    </a>
-                </div>
+                <Link href={"/visitors"}>
+                    <div className={"sidebar-button"}>
+                        <a>
+                            <FontAwesomeIcon icon={faChartLine} color="#6B7280" size="2x"/>
+                        </a>
+                    </div>
+                </Link>
                 <div className={"sidebar-button"}>
                     <a>
                         <FontAwesomeIcon icon={faInbox} color="#6B7280" size="2x"/>
