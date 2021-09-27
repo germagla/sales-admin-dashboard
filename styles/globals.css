@@ -15,14 +15,14 @@ html, body {
     width: 100vw;
     border-bottom: 1px solid #D1D5DB;
     top: 0px;
-    /*padding-left: 60px;*/
     margin: 0px;
-    /*margin-right: 20px;*/
     grid-template-columns: repeat(20, 1fr);
+    background-color: white;
 }
 
 .side-nav {
     position: fixed;
+    top: 0px;
     display: grid;
     align-items: stretch;
     justify-items: stretch;
@@ -37,6 +37,7 @@ html, body {
 }
 .side-nav-expanded {
     position: fixed;
+    top: 0px;
     display: grid;
     align-items: stretch;
     justify-items: stretch;
@@ -125,10 +126,17 @@ html, body {
 
 .sidebar-button-expanded{
     display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
     gap: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #6B7280;
+}
+.sidebar-button-expanded>div{
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 .sidebar-button-expanded:hover{
@@ -142,10 +150,35 @@ html, body {
 #sidebar-searchbar{
     margin: 15px 25px;
     border: 1px solid #6B7280;
+    font-size: 1.2em;
+    font-weight: lighter;
 
 }
 
+svg{
+    height: 32px;
+    width: 32px;
+}
+
+.homepage-container-grid{
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 150vh;
+    border: 2px solid #6B7280;
+    margin: 110px 40px 35px 100px;
 
 
+}
 
+.visitors-container-grid{
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 150vh;
+    border: 2px solid darkred;
+    margin: 110px 40px 35px 100px;
+
+
+}
 
