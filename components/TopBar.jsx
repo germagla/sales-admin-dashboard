@@ -2,6 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faImage, faUser} from "@fortawesome/free-solid-svg-icons";
 import {dashboardData} from "/pages/index"
+import {faUserCircle} from "@fortawesome/free-regular-svg-icons";
 
 
 function TopBar(props) {
@@ -14,7 +15,7 @@ function TopBar(props) {
                 <span className="user-name">{dashboardData.user.full_name.toUpperCase()}</span>
                 <span className="user-settings-shortcut"><a href="#" id="account-settings">Account Settings</a></span>
                 <div className="user-avatar">
-                    <FontAwesomeIcon icon={faUser} size="2x" color="#6B7280"/>
+                    <FontAwesomeIcon icon={faUserCircle} size="2x" color="#6B7280"/>
                 </div>
             </div>
         </div>
